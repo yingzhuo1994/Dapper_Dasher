@@ -34,10 +34,6 @@ int main()
         0 // float runningTime
     };
 
-
-    // Rectangle nebRec{0.0, 0.0, nebula.width/8, nebula.height/8};
-    // Vector2 nebPos{windowWidth, windowHeight - nebRec.height};
-
     AnimData neb2Data{ 
         {0.0, 0.0, nebula.width/8, nebula.height/8}, // Rectangle rec
         {windowWidth + 300, windowHeight - nebula.height/8}, // Vector 2 pos
@@ -45,19 +41,6 @@ int main()
         1.0/16.0, // float updateTime
         0 // float runningTime
     };
-
-    // Rectangle neb2Rec{0.0, 0.0, nebula.width/8, nebula.height/8};
-    // Vector2 neb2Pos{windowWidth + 300, windowHeight - nebRec.height};
-
-    
-    // nebula animation variables
-    // int nebFrame{};
-    // const float nebUpdateTime{1.0/12.0};
-    // float nebRunningTime{};
-
-    // int neb2Frame{};
-    // const float neb2UpdateTime{1.0/16.0};
-    // float neb2RunningTime{};
 
     // nebula X velocity (pixels/second)
     int nebVel{-200};
@@ -79,23 +62,6 @@ int main()
     scarfyData.updateTime = 1.0 / 12.0;
 
     scarfyData.runningTime = 0;
-
-
-    // Rectangle scarfyRec;
-    // scarfyRec.width = scarfy.width / 6;
-    // scarfyRec.height = scarfy.height;
-    // scarfyRec.x = 0;
-    // scarfyRec.y = 0;
-    // Vector2 scarfyPos;
-    // scarfyPos.x = windowWidth / 2 - scarfyRec.width / 2;
-    // scarfyPos.y = windowHeight - scarfyRec.height;
-    
-
-    // animation frame
-    // int frame{};
-    // amount of time before we update the animation frame
-    // const float updateTime{1.0/12.0};
-    // float runningTime{};
 
     // is the rectangle in the air?
     bool isInAir{false};
