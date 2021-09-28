@@ -43,7 +43,20 @@ int main()
         0 // float runningTime
     };
 
-    AnimData nebulae[2]{ nebData, neb2Data };
+    AnimData nebulae[2]{};
+
+    for (int i = 0; i < 3; i++)
+    {
+        nebulae[i].rec.x = 0.0;
+        nebulae[i].rec.y = 0.0;
+        nebulae[i].rec.width = nebula.width / 8;
+        nebulae[i].rec.height = nebula.height / 8;
+        nebulae[i].pos.x = windowDimensions[0] + 300 * i;
+        nebulae[i].pos.y = windowDimensions[1] - nebula.height / 8;
+        nebulae[i].frame = 0;
+        nebulae[i].runningTime = 0.0;
+        nebulae[i].updateTime = 0.0;
+    }
 
     // nebula X velocity (pixels/second)
     int nebVel{-200};
